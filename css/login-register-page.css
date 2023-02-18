@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+/* Muda a cor e aumenta em 100% x e y a div principal e coloca as div filhas lado a lado 
+alinha tudo no centro*/
+.main-screen {
+    width: 100vw;
+    height: 100vh;
+    background-color: #201b2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pega a div filha da esquerda da a altura e largura e mete tudo no centro só que em coluna */
+.left-screen {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Muda a cor do titulo da div filha da esquerdola deixa maiusculo*/
+.left-screen h1 {
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: #77ffc0;
+}
+
+/* Diminui o tamanho da imagem */
+.left-screen-img {
+    width: 25vw;
+}
+
+/* Pega a div filha da esquerda da a altura e largura e mete tudo no centro */
+.right-screen {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pega o quadradales que fica o login e as parada e mete no centro muda cor bota sombra e os carai a 4 */
+.card-screen {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 35px;
+    background: #2f2841;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+/* Muda a cor do titulo da div filha da direitola e engrossa - LA ELE */
+.card-screen h1 {
+    text-transform: uppercase;
+    color: #00ff88;
+    font-weight: 800;
+    margin: 0;
+}
+/* MUDA A COR DO TEXTO PARA CRIAR CONTA */
+.card-screen a{
+    color: #f0ffff94;
+}
+/* MUDA A COR DO TEXTO EM HOVER */
+.card-screen a:hover{
+    color:#f0ffffde;
+}
+/* PEGA ONDE TEM O USUARIO E SENHA E COLOCA FLEX SÓ QUE EM COLUNA E TUDO MAIS A ESQUERDA POSSÍVEL */
+.screen-user {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+/* PEGA ONDE TEM O USUARIO E SENHA MAS MEXE NO INPUT, DEIXA BONITO E COLOCA BORDER BOX PRA N VAZR DE LADINHO */
+.screen-user input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* PEGA ONDE TEM O USUARIO E SENHA MAS MEXE NA LABEL, DEIXA BONITO E BOTA MARGEM PRA NÃO FICAR JUNTIN */
+.screen-user label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+/* PEGA ONDE TEM O USUARIO E SENHA MAS MEXE NO PLACEHOLDER, DEIXA COMBINANDINHO A COR */
+.screen-user input::placeholder {
+    color: #f0ffff94;
+}
+
+/* PEGA O BOTÃO DEIXA BONITO */
+.button-screen {
+    width: 65%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color: #2b134b;
+    background-color: #00ff88;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+
+/* MUDA A COR DO BOTÃO EM HOVER */
+.button-screen:hover {
+    background-color: #77ffc0;
+}
+
+@media only screen and (max-width:950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login{
+        display: none;
+    }
+    
+}
