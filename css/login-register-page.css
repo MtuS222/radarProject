@@ -1,52 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-}
-
-/* Muda a cor e aumenta em 100% x e y a div principal e coloca as div filhas lado a lado 
-alinha tudo no centro*/
-.main-screen {
-    width: 100vw;
-    height: 100vh;
-    background-color: #201b2c;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Pega a div filha da esquerda da a altura e largura e mete tudo no centro só que em coluna */
-.left-screen {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Muda a cor do titulo da div filha da esquerdola deixa maiusculo*/
-.left-screen h1 {
-    text-transform: uppercase;
-    font-size: 2vw;
-    color: #77ffc0;
-}
-
-/* Diminui o tamanho da imagem */
-.left-screen-img {
-    width: 25vw;
-}
-
-/* Pega a div filha da esquerda da a altura e largura e mete tudo no centro */
-.right-screen {
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 /* Pega o quadradales que fica o login e as parada e mete no centro muda cor bota sombra e os carai a 4 */
 .card-screen {
@@ -134,18 +85,3 @@ alinha tudo no centro*/
     background-color: #77ffc0;
 }
 
-@media only screen and (max-width:950px){
-    .card-login{
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width:600px){
-    .main-login{
-        flex-direction: column;
-    }
-    .left-login{
-        display: none;
-    }
-    
-}

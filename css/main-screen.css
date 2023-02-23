@@ -1,0 +1,40 @@
+/* Muda a cor e aumenta em 100% x e y a div principal e coloca as div filhas lado a lado 
+alinha tudo no centro*/
+
+.main-screen {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pega a div filha da esquerda da a altura e largura e mete tudo no centro só que em coluna */
+.left-screen {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Muda a cor do titulo da div filha da esquerdola deixa maiusculo*/
+.left-screen h1 {
+    text-transform: uppercase;
+    font-size: 2vw;
+    color: #77ffc0;
+}
+
+/* Diminui o tamanho da imagem */
+.left-screen-img {
+    width: 25vw;
+}
+
+/* Pega a div filha da esquerda da a altura e largura e mete tudo no centro */
+.right-screen {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
